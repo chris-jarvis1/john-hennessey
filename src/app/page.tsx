@@ -1,107 +1,117 @@
+import Image from "next/image";
+import { BrandLogos, SiteFooter, SiteHeader } from "@/components/site-chrome";
+
+const services = [
+  {
+    number: "01 / COMMERCIAL STRATEGY",
+    title: <>Find your<br /><em>growth path.</em></>,
+    description: "Clarify your proposition, positioning and go-to-market plan. Turn commercial ambition into a focused set of moves your team can execute.",
+    label: "Explore commercial strategy",
+    tone: "service-card-dark",
+  },
+  {
+    number: "02 / SALES GROWTH & GTM",
+    title: <>Build a more<br /><em>predictable engine.</em></>,
+    description: "Strengthen sales execution, customer success and retention to create healthier, more predictable and scalable revenue.",
+    label: "Explore sales & GTM",
+    tone: "service-card-sand",
+  },
+  {
+    number: "03 / COMMERCIAL LEADERSHIP",
+    title: <>Make the next<br /><em>stage count.</em></>,
+    description: "Bring experienced interim or fractional commercial leadership to a launch, growth phase or moment of change.",
+    label: "Explore leadership support",
+    tone: "service-card-lime",
+  },
+];
+
 export default function Home() {
   return (
     <main>
       <section className="hero" id="top">
-        <header className="site-header shell">
-          <a className="wordmark" href="#top" aria-label="John Hennessy home">
-            JOHN HENNESSY<span className="wordmark-dot">.</span>
-            <span className="wordmark-sub">STRATEGY · PROPTECH · GROWTH</span>
-          </a>
-          <nav className="main-nav" aria-label="Main navigation">
-            <a href="#approach">Approach</a>
-            <a href="#expertise">Expertise</a>
-            <a href="#about">About</a>
-          </nav>
-          <a className="header-cta" href="#contact">Let&apos;s talk <span>↗</span></a>
-        </header>
-
+        <SiteHeader />
         <div className="hero-layout shell">
           <div className="hero-copy">
-            <p className="eyebrow light-eyebrow"><span className="eyebrow-line" /> INDEPENDENT ADVISORY · REAL ESTATE &amp; TECHNOLOGY</p>
-            <h1>Make your<br /><em>next move</em><br />count.</h1>
-            <p className="hero-intro">Clear thinking for ambitious property and proptech businesses. Find your edge, build the right relationships, and turn momentum into meaningful growth.</p>
+            <p className="eyebrow light-eyebrow"><span className="eyebrow-line" /> PROPTECH GROWTH CONSULTANT</p>
+            <h1>Commercial<br /><em>clarity.</em><br />Real growth.</h1>
+            <p className="hero-intro">I help PropTech and property businesses accelerate growth, build strategic partnerships and create more predictable revenue.</p>
             <div className="hero-actions">
               <a className="button button-lime" href="#contact">Start a conversation <span>↗</span></a>
-              <a className="text-link light-link" href="#approach">Explore the approach <span>↓</span></a>
+              <a className="text-link light-link" href="/services">Explore services <span>↓</span></a>
             </div>
-            <div className="hero-note"><span className="note-star">✳</span><span>Good advice starts<br />with good questions.</span></div>
+            <div className="hero-note"><span className="note-star">✳</span><span>Independent commercial leadership<br />for what comes next.</span></div>
           </div>
-          <div className="hero-art" aria-label="Abstract architectural photograph of a modern building">
-            <div className="art-image" />
+          <div className="hero-art" aria-label="King's Cross railway station in London">
+            <Image className="art-image station-image" src="/building1.jpg" alt="King's Cross station, a historic London railway station" fill priority sizes="(max-width: 640px) 90vw, 42vw" />
             <div className="art-frame" />
-            <div className="art-caption"><span>01 / 03</span><span>Perspective changes everything</span></div>
           </div>
         </div>
-        <div className="hero-bottom shell"><span>INDEPENDENT BY DESIGN</span><span className="scroll-cue">SCROLL TO EXPLORE <b>↓</b></span><span>WORKING ACROSS THE BUILT WORLD</span></div>
+        <div className="hero-bottom shell"><span>20+ YEARS OF EXPERIENCE</span><span className="scroll-cue">SCROLL TO EXPLORE <b>↓</b></span><span>UK PROPERTY · GLOBAL PERSPECTIVE</span></div>
       </section>
 
       <section className="intro-section section-pad" id="approach">
         <div className="shell intro-grid">
           <p className="eyebrow"><span className="eyebrow-line" /> THE OPPORTUNITY</p>
           <div className="intro-content">
-            <h2>Big ambitions deserve<br />more than <em>business as usual.</em></h2>
+            <h2>Turn commercial ambition<br />into <em>revenue that scales.</em></h2>
             <div className="intro-bottom">
-              <p className="body-large">The property landscape is moving fast. I work alongside founders and leadership teams to make sense of what’s next—and move toward it with purpose.</p>
+              <p className="body-large">I work with founders, leadership teams and investors to align go-to-market strategy, sales execution and customer retention—especially in trust-critical markets where buying cycles are complex and credibility matters.</p>
               <a className="round-link" href="#expertise" aria-label="Discover expertise">↘</a>
             </div>
           </div>
         </div>
       </section>
 
+      <BrandLogos />
+
       <section className="expertise-section section-pad" id="expertise">
         <div className="shell">
           <div className="section-heading">
-            <div><p className="eyebrow"><span className="eyebrow-line" /> WHERE I CAN HELP</p><h2>From the big picture<br />to the <em>next right step.</em></h2></div>
-            <p className="heading-aside">No off-the-shelf playbooks. Just sharp thinking, useful connections and focused support built around your business.</p>
+            <div><p className="eyebrow"><span className="eyebrow-line" /> WHERE JOHN CAN HELP</p><h2>Commercial expertise<br />for <em>your next stage.</em></h2></div>
+            <p className="heading-aside">Hands-on, data-driven and pragmatic. Board-level perspective, close to the day-to-day work of building revenue.</p>
           </div>
           <div className="service-grid">
-            <article className="service-card service-card-dark">
-              <div className="card-top"><span>01 / STRATEGY</span><span className="card-symbol">↗</span></div>
-              <div className="service-icon icon-target"><span /></div>
-              <h3>Find your<br /><em>growth path.</em></h3>
-              <p>Turn a complex market into a clear plan. Pressure-test your positioning, sharpen your priorities and choose the moves that matter now.</p>
-              <a href="#contact" className="card-link">Explore strategy <span>↗</span></a>
-            </article>
-            <article className="service-card service-card-sand">
-              <div className="card-top"><span>02 / CONNECTIONS</span><span className="card-symbol">↗</span></div>
-              <div className="service-icon icon-orbit"><span /><i /><b /></div>
-              <h3>Get in the<br /><em>right rooms.</em></h3>
-              <p>Build relationships that open doors. Access thoughtful introductions across real estate, proptech, investment and the wider built environment.</p>
-              <a href="#contact" className="card-link">Build your network <span>↗</span></a>
-            </article>
-            <article className="service-card service-card-lime">
-              <div className="card-top"><span>03 / MOMENTUM</span><span className="card-symbol">↗</span></div>
-              <div className="service-icon icon-spark">✳</div>
-              <h3>Make progress<br /><em>that lasts.</em></h3>
-              <p>From market entry to an important next chapter, bring an experienced outside perspective to the moments that can shape your future.</p>
-              <a href="#contact" className="card-link">Talk through your goals <span>↗</span></a>
-            </article>
+            {services.map((service, index) => (
+              <article className={`service-card ${service.tone}`} key={service.number}>
+                <div className="card-top"><span>{service.number}</span><span className="card-symbol">↗</span></div>
+                <div className={`service-icon ${index === 0 ? "icon-target" : index === 1 ? "icon-orbit" : "icon-spark"}`}>
+                  {index === 0 ? <span /> : index === 1 ? <><span /><i /><b /></> : "↗"}
+                </div>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                <a href="/services" className="card-link">{service.label} <span>↗</span></a>
+              </article>
+            ))}
           </div>
+          <div className="service-more"><a className="text-link dark-link" href="/services">See the full range of support <span>↗</span></a></div>
         </div>
       </section>
 
-      <section className="quote-section">
-        <div className="shell quote-wrap">
-          <p className="eyebrow light-eyebrow"><span className="eyebrow-line" /> THE WAY I WORK</p>
-          <span className="quote-mark">“</span>
-          <blockquote>Strategy only matters<br />when it <em>moves you forward.</em></blockquote>
-          <div className="quote-footer"><span>A practical partner for your next stage</span><span>INSIGHT <b>+</b> ACTION</span></div>
+      <section className="proof-section">
+        <div className="shell proof-grid">
+          <p className="eyebrow light-eyebrow"><span className="eyebrow-line" /> EXPERIENCE THAT GETS TO WORK</p>
+          <div className="proof-stats">
+            <div><strong>20<span>+</span></strong><p>years in property<br />and technology</p></div>
+            <div><strong>6</strong><p>commercial growth<br />capabilities</p></div>
+            <div><strong>3</strong><p>ways to engage:<br />day rate, retained, project</p></div>
+          </div>
+          <p className="proof-note">Experience across recognised names including Rightmove, Zoopla, OnTheMarket, Reapit and IOVOX.</p>
         </div>
       </section>
 
       <section className="about-section section-pad" id="about">
         <div className="shell about-grid">
-          <div className="about-visual">
-            <div className="about-photo" />
-            <div className="about-tag">REAL ESTATE<br /><span>MEETS WHAT’S NEXT</span></div>
-            <span className="about-index">A DIFFERENT POINT OF VIEW / 02</span>
+          <div className="about-visual portrait-about">
+            <Image className="about-photo portrait-image" src="/john-hennessy.jpg" alt="John Hennessy" fill sizes="(max-width: 640px) 90vw, 40vw" />
+            <div className="about-tag">20+ YEARS<br /><span>COMMERCIAL EXPERIENCE</span></div>
+            <span className="about-index">PROPTECH · PROPERTY · GROWTH / 01</span>
           </div>
           <div className="about-copy">
-            <p className="eyebrow"><span className="eyebrow-line" /> A LITTLE ABOUT ME</p>
-            <h2>Curious by nature.<br /><em>Commercial by instinct.</em></h2>
-            <p className="body-large">I’m John Hennessy. I help people building the future of property get closer to what’s possible—with honest advice, a wider perspective and a bias for action.</p>
-            <p className="body-copy">The best outcomes rarely come from doing more of the same. They come from seeing the market clearly, knowing where you bring value and having the confidence to act. That’s the work we do together.</p>
-            <a className="text-link dark-link" href="#contact">A good place to start <span>↗</span></a>
+            <p className="eyebrow"><span className="eyebrow-line" /> A LITTLE ABOUT JOHN</p>
+            <h2>Commercial by instinct.<br /><em>Practical by nature.</em></h2>
+            <p className="body-large">I’m John Hennessy, an independent consultant and fractional commercial leader. I help ambitious teams build predictable, scalable revenue—and stay close enough to make the plan happen.</p>
+            <p className="body-copy">From B2B SaaS and PropTech to compliance and other trust-driven markets, I bring a hands-on approach to growth, change and scale-up.</p>
+            <a className="text-link dark-link" href="/about">More about John <span>↗</span></a>
           </div>
         </div>
       </section>
@@ -110,24 +120,16 @@ export default function Home() {
         <div className="shell contact-grid">
           <div>
             <p className="eyebrow light-eyebrow"><span className="eyebrow-line" /> YOUR NEXT CHAPTER</p>
-            <h2>Let’s make<br />something <em>move.</em></h2>
+            <h2>Ready to make<br />growth <em>happen?</em></h2>
           </div>
           <div className="contact-content">
-            <p>Have a challenge to untangle, an idea to test or a business ready for its next stage? Tell me a little about it. The first conversation is always straightforward.</p>
+            <p>Need to sharpen your go-to-market strategy, strengthen revenue or add senior commercial leadership? Let’s talk through what would move the business forward.</p>
             <a className="contact-email" href="mailto:hello@johnhennessy.co.uk">Start a conversation <span>↗</span></a>
-            <span className="contact-detail">Independent advisory · Real estate &amp; proptech</span>
+            <a className="contact-detail contact-linkedin" href="https://www.linkedin.com/in/johnshennessy" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
           </div>
         </div>
       </section>
-
-      <footer className="site-footer">
-        <div className="shell footer-main">
-          <a className="wordmark footer-wordmark" href="#top">JOHN HENNESSY<span className="wordmark-dot">.</span><span className="wordmark-sub">STRATEGY · PROPTECH · GROWTH</span></a>
-          <div className="footer-note">Thoughtful advice.<br />Forward motion.</div>
-          <a className="back-top" href="#top">BACK TO TOP <span>↑</span></a>
-        </div>
-        <div className="shell footer-legal"><span>© 2026 John Hennessy</span><span>Independent by design.</span><a href="mailto:hello@johnhennessy.co.uk">GET IN TOUCH ↗</a></div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
