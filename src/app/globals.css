@@ -26,6 +26,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+.ui-icon { display: block; width: 1em; height: 1em; flex: 0 0 auto; overflow: visible; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 a { color: inherit; text-decoration: none; }
 ::selection { color: #fff; background: var(--magenta); }
 
@@ -96,7 +97,7 @@ h1 em, h2 em, h3 em, blockquote em { color: var(--magenta); font-weight: 400; }
 .text-link { display: inline-flex; align-items: center; gap: 14px; font-size: 11px; font-weight: 600; }
 .light-link { color: rgb(245 245 245 / 83%); }
 .hero-note { display: flex; align-items: center; gap: 12px; margin-top: 51px; color: rgb(245 245 245 / 58%); font-family: Georgia, "Times New Roman", serif; font-size: 12px; font-style: italic; line-height: 1.45; }
-.note-star { color: var(--magenta); font-size: 26px; font-style: normal; }
+.note-star { display: inline-flex; align-items: center; color: var(--magenta); font-size: 26px; font-style: normal; line-height: 1; }
 .hero-art { position: relative; width: min(100%, 510px); height: 490px; justify-self: end; margin: 6px 4% 0 0; }
 .art-image, .about-photo { position: absolute; inset: 0 29px 25px 0; }
 .hero-art .art-image { z-index: 2; }
@@ -127,7 +128,7 @@ h1 em, h2 em, h3 em, blockquote em { color: var(--magenta); font-weight: 400; }
 .service-card-sand { background: #d8d8d8; }
 .service-card-lime { background: #c9c9c9; }
 .card-top { display: flex; align-items: center; justify-content: space-between; font-size: 8px; font-weight: 700; letter-spacing: .15em; }
-.card-symbol { font-size: 16px; }
+.card-symbol { display: flex; align-items: center; font-size: 16px; }
 .service-icon { position: relative; display: grid; width: 55px; height: 55px; place-items: center; margin: 38px 0 24px; color: var(--magenta); }
 .icon-target::before, .icon-target::after, .icon-target span { position: absolute; border: 1px solid currentColor; border-radius: 50%; content: ""; }
 .icon-target::before { inset: 1px; }
@@ -191,7 +192,7 @@ blockquote { position: relative; z-index: 1; margin: 0; font-family: Georgia, "T
 .brand-logos { display: flex; align-items: center; justify-content: space-between; gap: 30px; margin-top: 28px; padding-top: 24px; border-top: 1px solid #dedede; }
 .brand-logos > span { color: #353535; white-space: nowrap; }
 .brand-rightmove { font-size: clamp(16px, 2vw, 25px); font-weight: 800; letter-spacing: -.08em; }
-.brand-rightmove span { padding-left: 4px; color: #56bda0; font-size: 12px; }
+.brand-rightmove span { display: inline-flex; align-items: center; padding-left: 4px; color: #56bda0; font-size: 12px; }
 .brand-zoopla { color: #632678 !important; font-size: clamp(21px, 2.6vw, 31px); font-weight: 750; letter-spacing: -.07em; }
 .brand-onthemarket { font-size: clamp(12px, 1.5vw, 18px); font-weight: 750; letter-spacing: -.05em; }
 .brand-reapit { font-size: clamp(18px, 2vw, 24px); font-weight: 850; letter-spacing: -.06em; }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BrandLogos, SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { ArrowIcon } from "@/components/icons";
 
 export const metadata = {
   title: "About John Hennessy | PropTech & Commercial Growth",
@@ -33,7 +34,7 @@ export default function AboutPage() {
             <p className="body-large">I’m John Hennessy, an independent consultant and fractional commercial leader. I work with founders, leadership teams and investors to build predictable revenue and create the foundations for sustainable growth.</p>
             <p>My work connects go-to-market strategy with the everyday disciplines that turn it into progress: sales execution, customer success, retention and expansion. I’m comfortable in the boardroom and alongside the teams responsible for making the plan real.</p>
             <p>I typically partner with B2B SaaS and PropTech businesses, compliance and risk-driven companies, and growth-stage teams looking to scale or bring more structure to revenue.</p>
-            <a className="button button-lime" href="/#contact">Talk about your business <span>↗</span></a>
+            <a className="button button-lime" href="/#contact">Talk about your business <span><ArrowIcon className="ui-icon" /></span></a>
           </div>
         </div>
       </section>
@@ -56,14 +57,14 @@ export default function AboutPage() {
       <section className="about-engagement section-pad">
         <div className="shell engagement-row">
           <p className="eyebrow"><span className="eyebrow-line" /> WORKING TOGETHER</p>
-          <div><h2>Flexible by design.<br /><em>Focused on outcomes.</em></h2><p className="body-large">Support can be shaped around the work: day-rate advisory, retained consultancy or a defined project engagement.</p><a className="text-link dark-link" href="/services">Explore services <span>↗</span></a></div>
+          <div><h2>Flexible by design.<br /><em>Focused on outcomes.</em></h2><p className="body-large">Support can be shaped around the work: day-rate advisory, retained consultancy or a defined project engagement.</p><a className="text-link dark-link" href="/services">Explore services <span><ArrowIcon className="ui-icon" /></span></a></div>
         </div>
       </section>
 
       <section className="contact-section">
         <div className="shell contact-grid">
           <div><p className="eyebrow light-eyebrow"><span className="eyebrow-line" /> START A CONVERSATION</p><h2>What are you<br />building <em>next?</em></h2></div>
-          <div className="contact-content"><p>Share the commercial challenge, growth opportunity or leadership gap you’re thinking about.</p><a className="contact-email" href="mailto:hello@johnhennessy.co.uk">hello@johnhennessy.co.uk <span>↗</span></a></div>
+          <div className="contact-content"><p>Share the commercial challenge, growth opportunity or leadership gap you’re thinking about.</p><a className="contact-email" href="mailto:hello@johnhennessy.co.uk">hello@johnhennessy.co.uk <span><ArrowIcon className="ui-icon" /></span></a></div>
         </div>
       </section>
       <SiteFooter />

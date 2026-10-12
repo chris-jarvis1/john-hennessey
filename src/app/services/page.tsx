@@ -1,4 +1,5 @@
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { ArrowIcon } from "@/components/icons";
 
 export const metadata = {
   title: "Services | John Hennessy Commercial & PropTech Growth",
@@ -39,7 +40,7 @@ export default function ServicesPage() {
                 <span className="service-detail-index">{item.index}</span>
                 <div><h3>{item.title}</h3><p className="service-detail-summary">{item.summary}</p></div>
                 <p className="service-detail-description">{item.detail}</p>
-                <a href="/#contact" aria-label={`Discuss ${item.title}`}>↗</a>
+                <a href="/#contact" aria-label={`Discuss ${item.title}`}><ArrowIcon className="ui-icon" /></a>
               </article>
             ))}
           </div>
@@ -60,7 +61,7 @@ export default function ServicesPage() {
       <section className="contact-section">
         <div className="shell contact-grid">
           <div><p className="eyebrow light-eyebrow"><span className="eyebrow-line" /> LET’S TALK</p><h2>Start with<br />the <em>challenge.</em></h2></div>
-          <div className="contact-content"><p>Tell me where you want to go, what’s getting in the way and what kind of support might help.</p><a className="contact-email" href="mailto:hello@johnhennessy.co.uk">Start a conversation <span>↗</span></a></div>
+          <div className="contact-content"><p>Tell me where you want to go, what’s getting in the way and what kind of support might help.</p><a className="contact-email" href="mailto:hello@johnhennessy.co.uk">Start a conversation <span><ArrowIcon className="ui-icon" /></span></a></div>
         </div>
       </section>
       <SiteFooter />

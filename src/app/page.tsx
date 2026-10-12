@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BrandLogos, SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { ArrowIcon, SparkIcon } from "@/components/icons";
 
 const services = [
   {
@@ -36,17 +37,17 @@ export default function Home() {
             <h1>Commercial<br /><em>clarity.</em><br />Real growth.</h1>
             <p className="hero-intro">I help PropTech and property businesses accelerate growth, build strategic partnerships and create more predictable revenue.</p>
             <div className="hero-actions">
-              <a className="button button-lime" href="#contact">Start a conversation <span>↗</span></a>
-              <a className="text-link light-link" href="/services">Explore services <span>↓</span></a>
+              <a className="button button-lime" href="#contact">Start a conversation <span><ArrowIcon className="ui-icon" /></span></a>
+              <a className="text-link light-link" href="/services">Explore services <span><ArrowIcon className="ui-icon" direction="down" /></span></a>
             </div>
-            <div className="hero-note"><span className="note-star">✳</span><span>Independent commercial leadership<br />for what comes next.</span></div>
+            <div className="hero-note"><span className="note-star"><SparkIcon className="ui-icon" /></span><span>Independent commercial leadership<br />for what comes next.</span></div>
           </div>
           <div className="hero-art" aria-label="King's Cross railway station in London">
             <Image className="art-image station-image" src="/building1.jpg" alt="King's Cross station, a historic London railway station" fill priority sizes="(max-width: 640px) 90vw, 42vw" />
             <div className="art-frame" />
           </div>
         </div>
-        <div className="hero-bottom shell"><span>20+ YEARS OF EXPERIENCE</span><span className="scroll-cue">SCROLL TO EXPLORE <b>↓</b></span><span>UK PROPERTY · GLOBAL PERSPECTIVE</span></div>
+        <div className="hero-bottom shell"><span>20+ YEARS OF EXPERIENCE</span><span className="scroll-cue">SCROLL TO EXPLORE <b><ArrowIcon className="ui-icon" direction="down" /></b></span><span>UK PROPERTY · GLOBAL PERSPECTIVE</span></div>
       </section>
 
       <section className="intro-section section-pad" id="approach">
@@ -56,7 +57,7 @@ export default function Home() {
             <h2>Turn commercial ambition<br />into <em>revenue that scales.</em></h2>
             <div className="intro-bottom">
               <p className="body-large">I work with founders, leadership teams and investors to align go-to-market strategy, sales execution and customer retention—especially in trust-critical markets where buying cycles are complex and credibility matters.</p>
-              <a className="round-link" href="#expertise" aria-label="Discover expertise">↘</a>
+              <a className="round-link" href="#expertise" aria-label="Discover expertise"><ArrowIcon className="ui-icon" direction="down-right" /></a>
             </div>
           </div>
         </div>
@@ -73,17 +74,17 @@ export default function Home() {
           <div className="service-grid">
             {services.map((service, index) => (
               <article className={`service-card ${service.tone}`} key={service.number}>
-                <div className="card-top"><span>{service.number}</span><span className="card-symbol">↗</span></div>
+                <div className="card-top"><span>{service.number}</span><span className="card-symbol"><ArrowIcon className="ui-icon" /></span></div>
                 <div className={`service-icon ${index === 0 ? "icon-target" : index === 1 ? "icon-orbit" : "icon-spark"}`}>
-                  {index === 0 ? <span /> : index === 1 ? <><span /><i /><b /></> : "↗"}
+                  {index === 0 ? <span /> : index === 1 ? <><span /><i /><b /></> : <SparkIcon className="ui-icon" />}
                 </div>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
-                <a href="/services" className="card-link">{service.label} <span>↗</span></a>
+                <a href="/services" className="card-link">{service.label} <span><ArrowIcon className="ui-icon" /></span></a>
               </article>
             ))}
           </div>
-          <div className="service-more"><a className="text-link dark-link" href="/services">See the full range of support <span>↗</span></a></div>
+          <div className="service-more"><a className="text-link dark-link" href="/services">See the full range of support <span><ArrowIcon className="ui-icon" /></span></a></div>
         </div>
       </section>
 
@@ -111,7 +112,7 @@ export default function Home() {
             <h2>Commercial by instinct.<br /><em>Practical by nature.</em></h2>
             <p className="body-large">I’m John Hennessy, an independent consultant and fractional commercial leader. I help ambitious teams build predictable, scalable revenue—and stay close enough to make the plan happen.</p>
             <p className="body-copy">From B2B SaaS and PropTech to compliance and other trust-driven markets, I bring a hands-on approach to growth, change and scale-up.</p>
-            <a className="text-link dark-link" href="/about">More about John <span>↗</span></a>
+            <a className="text-link dark-link" href="/about">More about John <span><ArrowIcon className="ui-icon" /></span></a>
           </div>
         </div>
       </section>
@@ -124,8 +125,8 @@ export default function Home() {
           </div>
           <div className="contact-content">
             <p>Need to sharpen your go-to-market strategy, strengthen revenue or add senior commercial leadership? Let’s talk through what would move the business forward.</p>
-            <a className="contact-email" href="mailto:hello@johnhennessy.co.uk">Start a conversation <span>↗</span></a>
-            <a className="contact-detail contact-linkedin" href="https://www.linkedin.com/in/johnshennessy" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
+            <a className="contact-email" href="mailto:hello@johnhennessy.co.uk">Start a conversation <span><ArrowIcon className="ui-icon" /></span></a>
+            <a className="contact-detail contact-linkedin" href="https://www.linkedin.com/in/johnshennessy" target="_blank" rel="noreferrer">Connect on LinkedIn <span><ArrowIcon className="ui-icon" /></span></a>
           </div>
         </div>
       </section>
