@@ -1,3 +1,4 @@
+import { ContactEmail } from "@/components/contact-email";
 import Image from "next/image";
 import { BrandLogos, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ArrowIcon } from "@/components/icons";
@@ -64,7 +65,7 @@ export default function AboutPage() {
       <section className="contact-section">
         <div className="shell contact-grid">
           <div><p className="eyebrow light-eyebrow"><span className="eyebrow-line" /> START A CONVERSATION</p><h2>What are you<br />building <em>next?</em></h2></div>
-          <div className="contact-content"><p>Share the commercial challenge, growth opportunity or leadership gap you’re thinking about.</p><a className="contact-email" href="mailto:hello@johnhennessy.co.uk">hello@johnhennessy.co.uk <span><ArrowIcon className="ui-icon" /></span></a></div>
+          <div className="contact-content"><p>Share the commercial challenge, growth opportunity or leadership gap you’re thinking about.</p><ContactEmail /></div>
         </div>
       </section>
       <SiteFooter />

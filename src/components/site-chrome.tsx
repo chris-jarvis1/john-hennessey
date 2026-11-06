@@ -31,7 +31,7 @@ export function SiteFooter() {
       <div className="shell footer-legal">
         <span>© 2026 John Hennessy</span>
         <span>Independent by design.</span>
-        <a href="mailto:hello@johnhennessy.co.uk">GET IN TOUCH <span><ArrowIcon className="ui-icon" /></span></a>
+        <a href="/#contact">GET IN TOUCH <span><ArrowIcon className="ui-icon" /></span></a>
       </div>
     </footer>
   );
@@ -42,12 +42,12 @@ export function BrandLogos() {
     <section className="brand-band" aria-label="Selected companies John has worked with">
       <div className="shell brand-band-inner">
         <p className="eyebrow"><span className="eyebrow-line" /> 20+ YEARS WITH LEADING PROPERTY &amp; TECHNOLOGY BRANDS</p>
-        <div className="brand-logos" aria-label="Rightmove, Zoopla, OnTheMarket, Reapit and IOVOX">
+        <div className="brand-logos" aria-label="Rightmove, Zoopla, OnTheMarket, Reapit and CoStar">
           <span className="brand-rightmove">rightmove<span><DiamondIcon className="ui-icon" /></span></span>
           <span className="brand-zoopla">Zoopla</span>
           <span className="brand-onthemarket">OnTheMarket</span>
           <span className="brand-reapit">REAPIT</span>
-          <span className="brand-iovox">iOVOX</span>
+          <span className="brand-costar">CoStar</span>
         </div>
       </div>
     </section>

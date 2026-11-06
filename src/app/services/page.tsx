@@ -1,3 +1,4 @@
+import { ContactEmail } from "@/components/contact-email";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ArrowIcon } from "@/components/icons";
 
@@ -61,7 +62,7 @@ export default function ServicesPage() {
       <section className="contact-section">
         <div className="shell contact-grid">
           <div><p className="eyebrow light-eyebrow"><span className="eyebrow-line" /> LET’S TALK</p><h2>Start with<br />the <em>challenge.</em></h2></div>
-          <div className="contact-content"><p>Tell me where you want to go, what’s getting in the way and what kind of support might help.</p><a className="contact-email" href="mailto:hello@johnhennessy.co.uk">Start a conversation <span><ArrowIcon className="ui-icon" /></span></a></div>
+          <div className="contact-content"><p>Tell me where you want to go, what’s getting in the way and what kind of support might help.</p><ContactEmail /></div>
         </div>
       </section>
       <SiteFooter />

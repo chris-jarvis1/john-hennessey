@@ -177,7 +177,12 @@ blockquote { position: relative; z-index: 1; margin: 0; font-family: Georgia, "T
 .contact-grid h2 em { color: var(--magenta); }
 .contact-content { padding-bottom: 8px; }
 .contact-content > p { max-width: 390px; margin: 0 0 29px; color: rgb(245 245 245 / 67%); font-size: 13px; line-height: 1.85; }
-.contact-email { display: flex; justify-content: space-between; padding: 17px 0; border-top: 1px solid rgb(245 245 245 / 33%); border-bottom: 1px solid rgb(245 245 245 / 33%); font-family: Georgia, "Times New Roman", serif; font-size: 20px; }
+.contact-email { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 17px 0; border-top: 1px solid rgb(245 245 245 / 33%); border-bottom: 1px solid rgb(245 245 245 / 33%); font-family: Georgia, "Times New Roman", serif; font-size: 20px; }
+.contact-email .contact-address { margin-left: 0; color: inherit; overflow-wrap: anywhere; user-select: all; }
+.copy-email { flex-shrink: 0; padding: 8px 12px; border: 1px solid currentColor; background: transparent; color: inherit; font: inherit; font-family: Arial, sans-serif; font-size: 12px; cursor: pointer; }
+.copy-email:hover { background: rgb(255 255 255 / 10%); }
+.copy-email:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.contact-content .copy-email-status { min-height: 1.5em; margin: 8px 0 0; font-size: 12px; }
 .contact-detail { display: block; margin-top: 15px; color: rgb(245 245 245 / 48%); font-size: 9px; letter-spacing: .09em; }
 .site-footer { padding: 36px 0 20px; color: var(--cream); background: #050505; }
 .footer-main, .footer-legal { display: flex; align-items: center; justify-content: space-between; }
@@ -196,7 +201,7 @@ blockquote { position: relative; z-index: 1; margin: 0; font-family: Georgia, "T
 .brand-zoopla { color: #632678 !important; font-size: clamp(21px, 2.6vw, 31px); font-weight: 750; letter-spacing: -.07em; }
 .brand-onthemarket { font-size: clamp(12px, 1.5vw, 18px); font-weight: 750; letter-spacing: -.05em; }
 .brand-reapit { font-size: clamp(18px, 2vw, 24px); font-weight: 850; letter-spacing: -.06em; }
-.brand-iovox { font-size: clamp(20px, 2.3vw, 27px); font-weight: 760; letter-spacing: -.07em; }
+.brand-costar { font-size: clamp(20px, 2.3vw, 27px); font-weight: 760; letter-spacing: -.07em; }
 .service-more { display: flex; justify-content: flex-end; margin-top: 28px; }
 .proof-section { padding: 76px 0 82px; color: #f5f5f5; background: #050505; }
 .proof-grid { display: grid; grid-template-columns: .8fr 1.2fr; align-items: start; gap: 34px 8%; }

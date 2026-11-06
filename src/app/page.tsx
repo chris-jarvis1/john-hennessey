@@ -1,3 +1,4 @@
+import { ContactEmail } from "@/components/contact-email";
 import Image from "next/image";
 import { BrandLogos, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { ArrowIcon, SparkIcon } from "@/components/icons";
@@ -96,7 +97,7 @@ export default function Home() {
             <div><strong>6</strong><p>commercial growth<br />capabilities</p></div>
             <div><strong>3</strong><p>ways to engage:<br />day rate, retained, project</p></div>
           </div>
-          <p className="proof-note">Experience across recognised names including Rightmove, Zoopla, OnTheMarket, Reapit and IOVOX.</p>
+          <p className="proof-note">Experience across recognised names including Rightmove, Zoopla, OnTheMarket, Reapit and CoStar.</p>
         </div>
       </section>
 
@@ -125,7 +126,7 @@ export default function Home() {
           </div>
           <div className="contact-content">
             <p>Need to sharpen your go-to-market strategy, strengthen revenue or add senior commercial leadership? Let’s talk through what would move the business forward.</p>
-            <a className="contact-email" href="mailto:hello@johnhennessy.co.uk">Start a conversation <span><ArrowIcon className="ui-icon" /></span></a>
+            <ContactEmail />
             <a className="contact-detail contact-linkedin" href="https://www.linkedin.com/in/johnshennessy" target="_blank" rel="noreferrer">Connect on LinkedIn <span><ArrowIcon className="ui-icon" /></span></a>
           </div>
         </div>
